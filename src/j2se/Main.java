@@ -9,6 +9,19 @@ public class Main {
 		s = new Scanner(System.in);
 		//数组：长度固定的统一类型的元素的容器
 		//声明数组的时候
+		/*int[] a ;
+		a = new int[5];
+		for(int i=0;i<5;i++){
+			a[i] = (int)(Math.random()*100);
+			System.out.println(a[i]);
+		}
+		int min = a[0];
+		for(int i=0;i<a.length;i++){
+			if(a[i]<=min){
+				min = a[i];
+			}
+		}
+		System.out.println(min);*/
 		//练习一：寻找黄金分割点
 		/*1、分子分母不能同时为偶数
 		2、分子分母取值范围是[1,20]*/
