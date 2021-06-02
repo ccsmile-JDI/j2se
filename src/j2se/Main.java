@@ -8,7 +8,78 @@ public class Main {
 	public static void main(String[] args) {
 		s = new Scanner(System.in);
 		//数组：长度固定的统一类型的元素的容器
-		//声明数组的时候
+		//数组排序
+		//方法二：冒泡排序：
+		//思路：
+		int[] a = new int[4];
+		
+		for(int i=0;i<a.length;i++){
+			a[i] = (int)(Math.random()*100);
+			System.out.print(a[i]+",");
+		}
+		System.out.println("");
+		//方法一：选择排序法
+		//思路：一个一个的比较找到小的就与开始的数字交换位置，然后继续去比较，用中间数交换位置
+		//第一次循环0<=i<a.length;第二次循环1<=i<a.length.....第a.length次循环a.length-1<=i<
+/*		int[] a = new int[4];
+		
+		for(int i=0;i<a.length;i++){
+			a[i] = (int)(Math.random()*100);
+			System.out.print(a[i]+",");
+		}
+		System.out.println("");
+		for(int i=0;i<a.length;i++){
+			int tmp = a[i];
+			for(int j=i;j<a.length;j++){
+				if(tmp>a[j]){
+					tmp = a[j];
+					a[j] = a[i];
+					a[i] = tmp;
+				}
+				for(int m=0;m<a.length;m++){
+					System.out.print(a[m]+",");
+					if(m == a.length-1){
+						System.out.println("");
+					}
+				}
+			}
+		}
+		for(int n=0;n<a.length;n++){
+			System.out.print(a[n]+",");
+		}*/
+		
+		
+		//数组反转
+		/*方法二
+		int a[] = new int[5];
+		for(int i=0;i<a.length;i++){
+			a[i] = (int)(Math.random()*100);
+			System.out.print(a[i]+",");
+		}
+		System.out.println("");
+		int mid;
+		for(int i=0;i<a.length/2;i++){
+			mid = a[i];
+			a[i] = a[a.length-1-i];
+			a[a.length-1-i] = mid;
+		}
+		for(int i=0;i<a.length;i++){
+			System.out.print(a[i]+",");
+		}*/
+		/*方法一
+		int a[] = new int[5];
+		for(int i=0; i<a.length;i++){
+			a[i] = (int)(Math.random()*100);
+			System.out.print(a[i]+",");
+		}
+		System.out.println("");
+		int b[] = new int[a.length];
+		for(int i=0;i<a.length;i++){
+			b[i] = a[a.length-1-i];
+			System.out.print(b[i]+",");
+		}*/
+		
+		//声明数组，查找数组的最小值
 		/*int[] a ;
 		a = new int[5];
 		for(int i=0;i<5;i++){
