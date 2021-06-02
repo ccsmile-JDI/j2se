@@ -7,13 +7,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		s = new Scanner(System.in);
+		//数组：长度固定的统一类型的元素的容器
+		//声明数组的时候
 		//练习一：寻找黄金分割点
 		/*1、分子分母不能同时为偶数
 		2、分子分母取值范围是[1,20]*/
 		/*思路：分子分母可以使用两层循环外层为分母，内层为分子，
 		 * 短路与判断分子分母不能同时为偶数，符合条件continue
 		 * 中间值记录与黄金分割点的差的绝对值和对应的分子分母，逐一比较直至最后*/
-		int fenzi = 1;//分子初始结果值
+		/*int fenzi = 1;//分子初始结果值
 		int fenmu = 1;//分母初始结果值
 		double delta = 1;//与黄金分割点差的绝对值的初始值
 		for(int i=1;i<=20;i++){
@@ -25,13 +27,14 @@ public class Main {
 						 delta = Math.abs(0.618-((float)j/(float)i));
 						 fenzi = (int)j;
 						 fenmu = (int)i;
-					 }/*else{
+					 }else{
 						 continue;
-					 }*/
+					 }
 				}
 			}
 		}
 		System.out.println("分子："+fenzi+",分母："+fenmu+",结果为："+((float)fenzi/(float)fenmu));
+		*/
 		//跳出外部循环
 		//方法一：使用boolean变量控制
 		/*int num = s.nextInt();
