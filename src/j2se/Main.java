@@ -19,6 +19,7 @@ public class Main {
 		}
 		System.out.println("");
 		
+		
 		//方法一：选择排序法
 		//思路：一个一个的比较找到小的就与开始的数字交换位置，然后继续去比较，用中间数交换位置
 		//第一次循环0<=i<a.length;第二次循环1<=i<a.length.....第a.length次循环a.length-1<=i<
